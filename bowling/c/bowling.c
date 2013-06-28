@@ -26,7 +26,7 @@ int score_game(char *game)
 			score += 10 + score_roll(c + 1) + score_roll(c + 2);
 			c++;
 		} else if (*(c + 1) == '/') {
-			score += 10 + score_roll(c + 1);
+			score += 10 + score_roll(c + 2);
 			c += 2;
 		} else {
 			score += score_roll(c) + score_roll(c + 1);
