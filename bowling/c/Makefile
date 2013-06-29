@@ -1,7 +1,7 @@
 all: bowling test
 
 bowling: bowling.c
-	gcc bowling.c -o bowling
+	gcc -Wall -Werror -Wextra bowling.c -o bowling
 
 test: bowling
 	./bowling_tests.sh
