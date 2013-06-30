@@ -65,3 +65,23 @@ The Problem
 > &mdash; <cite>[Coding Dojo][]</cite>
 
   [Coding Dojo]: http://codingdojo.org/cgi-bin/wiki.pl?KataBowling
+
+
+The Solutions
+-------------
+
+Here is a [C solution](c) and two [Haskell solutions](hs).
+
+The C solution is mostly simple and straightforward. The use of pointers
+elegantly (and perhaps dangerously) solves both look-ahead and look-behind. As
+a result, the C implementation of `score_roll` is more capable than the Haskell
+version. It can score spares. If the Haskell version could do the same,
+`rolls_to_ints` could have been defined as:
+
+    rolls_to_ints = map score_roll
+
+The Haskell solutions are, not surprisingly, much shorter than the C solution.
+`score_game2` decomposes parsing the string and scoring the game. The result is
+longer than `score_game`, but I believe, easier to understand. Pattern matching
+and guards are incredibly expressive. I can only hope more languages are able
+to adapt similar semantics.
