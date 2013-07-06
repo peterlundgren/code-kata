@@ -11,3 +11,10 @@ Code Kata
   [Dave Thomas]: http://en.wikipedia.org/wiki/Dave_Thomas_(programmer)
   [The Pragmatic Programmer]: http://en.wikipedia.org/wiki/The_Pragmatic_Programmer
   [Wikipedia]: http://en.wikipedia.org/wiki/Kata_(programming)
+
+
+The Kata
+--------
+
+*   **[Bowling](bowling)**  
+    Scoring a game of bowling
